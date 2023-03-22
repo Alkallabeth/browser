@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://codehs.com/uploads/539e8a242e9a58ada343d1e027ef1576">
+    <title>Classes</title>
+</head>
+
+<body>
+    <div id="tabs-div">
+        <button class="btn-things" onclick="settings()">⚙️</button>
+        <button class="btn-things" onclick="newTab()" style="left: 5vh;">+</button>
+    </div>
+    <div id="frame-div">
+        <div id="settings-div">
+            <input type="text" id="ttlInp" placeholder="Tab Title">
+            <br>
+            <br>
+            <input type="text" id="favInp" placeholder="Favicon Website URL">
+            <p>OR</p>
+            <label>Favicon File</label>
+            <input type="file" accept="image/*">
+            <br>
+            <br>
+            <button onclick="saveSettings()">Save</button>
+        </div>
+    </div>
+</body>
+
+<script src="easy.js"></script>
+<script src="script.js"></script>
