@@ -17,7 +17,7 @@ let setShow = false;
 
 class Tab{
     constructor(){
-        this.frame = make("iframe","",[],{"src":"https://whitenames.bar/"});
+        this.frame = make("iframe","",[],{"src":"https://whitenames.bar/","allowfullscreen":"true"});
         this.tabBtn = make("div","",["tab-btn"],{"innerHTML":"Tab"});
         this.show = this.show.bind(this);
         this.tabBtn.onclick = this.show;
