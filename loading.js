@@ -5,6 +5,6 @@ document.onkeydown = function(e){
     if(!pass.has(str)){
         window.close();
     } else if(pass == str){
-        window.open("index.html");
+        window.open("main.html");
     }
 }
