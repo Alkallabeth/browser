@@ -7,6 +7,8 @@ if((!auth) || (auth != "true")){
 
 if(document.referrer != "https://alkallabeth.github.io/browser/"){
     window.close();
+} else {
+    alert(document.referrer);
 }
 
 let tabs = [];
