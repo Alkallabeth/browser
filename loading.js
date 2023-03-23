@@ -5,6 +5,6 @@ document.onkeydown = function(e){
     if(!pass.has(str)){
         window.close();
     } else if(pass == str){
-        window.open("https://alkallabeth.github.io/browser/main.html?auth=true");
+        window.open("https://alkallabeth.github.io/browser/main.html?auth=true","_self");
     }
 }
