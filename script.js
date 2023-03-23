@@ -1,13 +1,10 @@
-try{
-    let queryString = window.location.search;
-    let urlParams = new URLSearchParams(queryString);
-    let auth = urlParams.get('auth');
-    if(auth == null){
-        window.close();
-    }
-} catch(error){
+let queryString = window.location.search;
+let urlParams = new URLSearchParams(queryString);
+let auth = urlParams.get('auth');
+if(auth == null){
     window.close();
 }
+
 if(document.referrer != "https://alkallabeth.github.io/browser/"){
     window.close();
 }
