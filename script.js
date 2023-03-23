@@ -5,10 +5,14 @@ if((!auth) || (auth != "true")){
     window.close();
 }
 
+try{
 if(document.referrer != "https://alkallabeth.github.io/browser/"){
     window.close();
 } else {
     alert(document.referrer);
+}
+} catch(error){
+    alert(error);
 }
 
 let tabs = [];
