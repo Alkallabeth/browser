@@ -8,7 +8,7 @@ if((!auth) || (auth != "true")){
 if(document.referrer != "https://alkallabeth.github.io/browser/"){
   window.open("https://classroom.google.com/h","_self");
 } else {
-    alert(document.referrer);
+    q('#tabs-div').style.display = "inline-block";
 }
 
 let tabs = [];
