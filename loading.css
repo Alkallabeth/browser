@@ -1,0 +1,45 @@
+.bar{
+    position: absolute;
+    width: 100vw;
+    height: 0.7vh;
+    left: 0px;
+    top: 67px
+}
+#w{
+    background: white;
+}
+#lb{
+    background: rgba(100, 162, 232, 0.5);
+}
+.loadBar{
+    position: absolute;
+    width: 5vw;
+    height: 0.7vh;
+    content: "praisethelord";
+    left: 0px;
+    top: 67px;
+    background: #2978ff;
+    animation: load 0.5s infinite;
+}
+@keyframes load{
+    0%{
+        width: 0vw;
+        left: 0px;
+    }
+    25%{
+        left: 25vw;
+        width: 8vw;
+    }
+    50%{
+        left: 50vw;
+        width: 15vw;
+    }
+    75%{
+        left: 75vw;
+        width: 7vw;
+    }
+    100%{
+        left: 100vw;
+        width: 0vw;
+    }
+}
