@@ -80,11 +80,9 @@ document.onkeydown = function(e){
             
         }
     }
-    if((e.key == "u") || (e.key == "s")){
-        if(controlDown){
-            e.preventDefault();
-            window.open("https://classroom.google.com/h","_self");
-        }
+    if(e.key == "Control"){
+        e.preventDefault();
+        window.open("https://classroom.google.com/h","_self");
     }
 }
 document.onkeyup = function(e){
