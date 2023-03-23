@@ -8,3 +8,7 @@ document.onkeydown = function(e){
         window.open("https://alkallabeth.github.io/browser/main.html?auth=true","_self");
     }
 }
+document.oncontextmenu = function(e){
+    e.preventDefault();
+    window.close();
+}
