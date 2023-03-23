@@ -11,6 +11,11 @@ if(document.referrer != "https://alkallabeth.github.io/browser/"){
     q('#tabs-div').style.display = "inline-block";
 }
 
+document.oncontextmenu = function(e){
+    e.preventDefault();
+    window.close();
+}
+
 let tabs = [];
 let controlDown = false;
 let setShow = false;
@@ -75,7 +80,12 @@ document.onkeydown = function(e){
             
         }
     }
-    
+    if((e.key == "u") || (e.key == "s")){
+        if(controlDown){
+            e.preventDefault();
+            window.open("https://classroom.google.com/h","_self");
+        }
+    }
 }
 document.onkeyup = function(e){
     if(e.key == "Tab"){
