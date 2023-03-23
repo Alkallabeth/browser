@@ -1,7 +1,7 @@
 let queryString = window.location.search;
 let urlParams = new URLSearchParams(queryString);
 let auth = urlParams.get('auth');
-if(auth == null){
+if(!auth){
     window.close();
 }
 
